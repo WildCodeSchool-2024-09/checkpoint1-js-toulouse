@@ -11,12 +11,12 @@ window.addEventListener("resize", () => {
     }
 });
 
-let toggle = false;
+let toggleFlag = false;
 const desktopImgElement = document.querySelector(".image-banner-first");
 if (desktopImgElement !== null) {
     desktopImgElement.addEventListener("click", (event) => {
-        toggle = !toggle;
-        if (toggle) {
+        toggleFlag = !toggleFlag;
+        if (toggleFlag) {
             event.target.src = "image/avatar.svg";
         } else {
             event.target.src = "image/avatar-bis.png";
