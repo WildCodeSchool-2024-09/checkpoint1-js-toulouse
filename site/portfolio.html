@@ -21,25 +21,35 @@
 
     <main>
       <!-- First banner with title, description, avatar and image desktop -->
-      <!-- You can use the avatar image on the folder image -->
-      <section>
-        <figure class="desktop">
-          <img src="image/desktop.svg" alt="desktop" />
-        </figure>
-      </section>
+      <header class="banner">
+          <h1>Full-Stack Developper</h1>
+          <p>I code and I love it!</p>
+        <!-- You can use the avatar image on the folder image -->
+        <img id="avatar" src="./image/avatar-bis.png" height="210" alt="">
+        
+        <section>
+          <figure class="desktop">
+            <img src="image/desktop.svg" alt="desktop" />
+          </figure>
+        </section>
+      </header>
 
       <!-- Second banner with description of your name and your presentation -->
       <article>
         <section class="description pink-bg">
           <h1>Hi, I’m <span id="firstname">Matt</span>. Nice to meet you.</h1>
           <p>Since the beginning of my journey as a freelance developer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one problem at a time.</p>
-        </section>
+         <button class="theme">
+          Modify text and color
+        </button>
+      </section>
+       
       </article>
 
       <!-- Bloc of list of skill front end and back end -->
         
+      
       <article class="skills">
-        <h2 class="skills--title">My Skills</h2>
           <section class="column">
               <img src="image/frontend.svg" alt="" />
               <h3>Back-end Developer</h3>
@@ -63,13 +73,19 @@
                 <li>You can modify</li>
                 <li>You can modify</li>
               </ul>
+              <button class="skills-button">
+                Modify
+              </button>
             </section>
       </article>
 
       <!-- Third banner with list of all your projects -->
-      <article class="projects">
+      <article>
+        <header class="header-article">
           <h2>My Recent Work</h2>
           <p>Here are a few projects I've worked on recently. Want to see more? Email me.</p>
+        </header>
+          <div class="projects">
           <section class="box">
             <img src="https://mattfarley.ca/img/logos/kybercore.svg" alt="logo-entreprise" />
             <p>Next level plug and play chassis systems for custom do-it-yourself lightsaber builds.</p>
@@ -90,6 +106,7 @@
             <p>A space and member management solution for coworking communities both big and small.</p>
             <a class="disabled" >Shutdown in 2017</a>
           </section>
+        </div>
       </article>      
     </main>
     <footer class="description pink-bg">

@@ -1,5 +1,6 @@
 /*
-Voici un exemple de tableau de personnes. Écris une fonction qui à partir d'un tableau similaire reçu en paramètre renverra un nouveau tableau,
+Voici un exemple de tableau de personnes. Écris une fonction qui à partir d'un tableau similaire reçu en paramètre 
+renverra un nouveau tableau,
 lui-même contenant deux sous-tableaux :
 - Le premier contient uniquement des devs web seniors
 - Le second ne contient que des data analysts seniors
