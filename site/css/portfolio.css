@@ -92,9 +92,29 @@ p {
   padding: 0 10%;
 }
 
+.skills h2.skills--title {
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
+
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
+}
+
+.skills {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media screen and (min-width: 700px) {
+  .skills {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
 }
 
 .column {
