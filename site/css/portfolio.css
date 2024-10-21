@@ -29,6 +29,7 @@ p {
 }
 
 .desktop {
+  display: none;
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
@@ -47,6 +48,14 @@ p {
   text-align: var(--textAlign);
 }
 
+.modify-button {
+  background-color: #ffc1f0;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 3px;
+  color: white;
+}
+
 .pink-bg {
   background-color: var(--lightWildColor);
 }
@@ -61,6 +70,12 @@ p {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
 }
+
+.skills-list {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
 
 .column {
   border-left: var(--styledBorder);
@@ -92,6 +107,10 @@ p {
   color: var(--lightWildColor);
 }
 
+.disabled {
+  opacity: 0.5;
+}
+
 .projects a {
   color: var(--purple);
 }
@@ -107,4 +126,31 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media screen and (min-width: 700px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .skills-list {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .projects-list {
+    display: flex;
+  }
 }
