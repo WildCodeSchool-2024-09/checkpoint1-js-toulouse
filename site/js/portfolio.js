@@ -42,3 +42,8 @@ if (modifyTextAndColorElement !== null) {
         }
     });
 }
+
+const linkElements = document.querySelectorAll("a");
+for (const linkElement of linkElements) {
+    linkElement.style.color = "#750ff7";
+}
