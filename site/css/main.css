@@ -33,6 +33,12 @@ header nav {
   margin: var(--gutter) calc(var(--gutter) * 2);
 }
 
+@media screen and (min-width: 700px) {
+  header nav {
+    justify-content: space-between;
+  }
+}
+
 header nav img {
   height: calc(var(--gutter) * 3);
   border-radius: var(--radius);
