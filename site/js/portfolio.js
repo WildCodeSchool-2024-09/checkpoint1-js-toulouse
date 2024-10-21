@@ -1,5 +1,6 @@
 const avatar = document.querySelector('.avatar')
 const modifyButton = document.querySelector('.modify-button')
+const lien = document.querySelectorAll('a')
 
 avatar.addEventListener('click', () => {
     avatar.src = './image/avatar.svg'
@@ -13,3 +14,7 @@ modifyButton.addEventListener('click', () => {
     firstName.style.color = 'white'
     document.documentElement.style.setProperty('--lightWildColor', color);
 })
+
+lien.forEach(element => {
+    element.style.color = '#750ff7'
+});
