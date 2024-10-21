@@ -58,6 +58,11 @@ p {
   padding: 0 10%;
 }
 
+.skills > div {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
@@ -127,7 +132,6 @@ p {
 }
 
 .skills > div {
-  display: flex;
   justify-content: center;
 } 
 }
