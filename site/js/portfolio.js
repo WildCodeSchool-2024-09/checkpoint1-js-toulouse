@@ -2,7 +2,9 @@ const avatar = document.querySelector('.avatar')
 const modifyButtonText = document.querySelector('#modify-button-text')
 const modifyButtonList = document.querySelector('#modify-button-list')
 const lien = document.querySelectorAll('a')
-const list = document.querySelectorAll('#front-dev-tools > li')
+const listFront = document.querySelectorAll('#front-dev-tools > li')
+const listBack = document.querySelector('.list-back')
+const addTools = document.querySelector('#add-tools')
 const newList = ['VSCode', 'Github', 'Terminal']
 
 avatar.addEventListener('click', () => {
@@ -19,9 +21,17 @@ modifyButtonText.addEventListener('click', () => {
 })
 
 modifyButtonList.addEventListener('click', () => {
-    list.forEach((element, index) => {
+    listFront.forEach((element, index) => {
         element.textContent = newList[index]
     })
+})
+
+addTools.addEventListener('click', () => {
+    const newElement = document.createElement('li')
+    const tools = document.querySelector('#tools')
+    newElement.innerHTML = tools.value
+    tools.value = ""
+    listBack.appendChild(newElement)
 })
 
 lien.forEach(element => {

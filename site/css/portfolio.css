@@ -113,13 +113,17 @@ p {
   color: var(--purple);
 }
 
-.modify-button {
+.buttons {
   color: white;
   border: 1px solid white;
   border-radius: 5px;
   background-color: var(--lightWildColor);
   height: 30px;
   cursor: pointer;
+}
+
+.inputs {
+  height: 27px;
 }
 
 @media screen and (min-width: 700px) {
