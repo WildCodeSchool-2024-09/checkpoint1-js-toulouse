@@ -8,13 +8,16 @@ avatar.addEventListener("click", () => {
 buttonName.addEventListener("click", () => {
   yourColor = prompt("Enter a color");
   yourName = prompt("What's your name?");
-  const customColor = document.querySelector(".pink-bg");
+  const customColorElements = document.querySelectorAll(".pink-bg");
   const customTextElements = document.querySelectorAll(".pink-text");
   const firstName = document.querySelector("#firstname");
 
   firstName.textContent = yourName;
   firstName.style.color = "white";
-  customColor.style.backgroundColor = yourColor;
+
+  for (const element of customColorElements) {
+    element.style.backgroundColor = yourColor;
+  }
 
   for (const element of customTextElements) {
     element.style.color = yourColor;
