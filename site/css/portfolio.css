@@ -133,5 +133,6 @@ p {
 
 .skills > div {
   justify-content: center;
+  flex-direction: row-reverse;
 } 
 }
