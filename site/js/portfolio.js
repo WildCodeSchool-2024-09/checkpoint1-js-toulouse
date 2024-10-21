@@ -42,4 +42,35 @@ window.addEventListener("load", () => {
             }
         });
     }
+
+    const modifymodifyFrontTevToolsElement = document.getElementById("modify-front-dev-tools");
+    if (modifymodifyFrontTevToolsElement !== null) {
+        modifymodifyFrontTevToolsElement.addEventListener("click", (event) => {
+            const parentElement = event.target.parentElement;
+            if (parentElement !== null) {
+                const liElements = parentElement.querySelectorAll("ul li");
+                const liArray = ["VSCode", "Github", "Terminal"];
+                let indexArray = 0;
+                for (const liElement of liElements) {
+                    liElement.innerText = liArray[indexArray];
+                    indexArray = (indexArray + 1) % liArray.length;
+                }
+            }
+        });
+    }
+
+    const addToolElement = document.getElementById("add-tool");
+    if (addToolElement !== null) {
+        addToolElement.addEventListener("click", (event) => {
+            const parentElement = event.target.parentElement;
+            if (parentElement !== null) {
+                const input = parentElement.querySelector("input");
+                const liElement = document.createElement("li");
+                liElement.innerText = input.value;
+                const ulElement = parentElement.parentElement.querySelector("ul");
+                ulElement.appendChild(liElement);
+            }
+        });
+    }
+
 });
