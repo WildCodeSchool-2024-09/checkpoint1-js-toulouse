@@ -11,6 +11,16 @@
   --textAlign: center;
 }
 
+button {
+  outline: none;
+  box-shadow: none;
+  color: var(--light);
+  background: var(--wildColor);
+  border: var(--lightWildColor) 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+}
+
 img {
   max-width: 100%;
 }
@@ -36,6 +46,7 @@ p {
 .image-banner-first {
   max-width: 225px;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 @media screen and (min-width: 700px) {
@@ -48,6 +59,7 @@ p {
   display: flex;
   justify-content: center;
 }
+
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
@@ -56,9 +68,7 @@ p {
 }
 
 .desktop-hidden {
-  width: 0;
-  height: 0;
-  overflow: hidden;
+  display: none;
 }
 
 @media screen and (min-width: 700px) {

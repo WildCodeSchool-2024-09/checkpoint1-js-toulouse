@@ -29,8 +29,13 @@ if (modifyTextAndColorElement !== null) {
     modifyTextAndColorElement.addEventListener("click", () => {
         const firstNameElement = document.getElementById("firstname");
         if (firstNameElement !== null) {
+            const color = prompt("Enter a color:"); 
             const name = prompt("Enter your name:");
-            if (name !== null) {
+            if (name !== null && color !== null) {
+                const rootElement = document.querySelector(':root');
+                if (rootElement !== null) {
+                    rootElement.style.setProperty("--lightWildColor", color);
+                }
                 firstNameElement.innerText = name;
                 firstNameElement.style.color = "#FFFFFF";
             }
