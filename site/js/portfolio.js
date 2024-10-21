@@ -7,5 +7,11 @@ const avatar = document.querySelector(".avatar-bis")
           }
     }) ;
 
-    const userName = document.querySelector("#firstname")
-        prompt("Quel est votre nom ?")
+    const userName = document.getElementById("#firstname") 
+    const button = document.querySelector(".button")
+    const backgroundColor = document.querySelectorAll(".pink-bg")
+    const color = document.querySelector(".button")
+    button.addEventListener("click", (event) => {
+        color = prompt("Enter your color")
+        firstname.innerHTML = prompt("Quel est votre nom ?");
+        firstname.style.color = "white";});
