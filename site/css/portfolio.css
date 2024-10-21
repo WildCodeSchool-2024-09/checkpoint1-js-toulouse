@@ -34,6 +34,10 @@ p {
   margin-bottom: calc(var(--gutter) * -0.3125);
 }
 
+.disabled {
+  opacity: 30%;
+}
+
 .description {
   color: var(--light);
   display: flex;
