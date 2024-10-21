@@ -113,6 +113,15 @@ p {
   color: var(--purple);
 }
 
+.modify-button {
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: var(--wildColor);
+  height: 30px;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 700px) {
   nav {
     justify-content: space-between;
