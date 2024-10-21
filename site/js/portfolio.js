@@ -6,8 +6,10 @@ avatar.addEventListener('click', () => {
 })
 
 modifyButton.addEventListener('click', () => {
+    const color = prompt('Enter a color')
     const name = prompt('Enter yout name :')
     const firstName = document.querySelector('#firstname')
     firstName.textContent = name
     firstName.style.color = 'white'
+    document.documentElement.style.setProperty('--lightWildColor', color);
 })
