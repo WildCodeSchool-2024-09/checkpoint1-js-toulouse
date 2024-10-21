@@ -4,12 +4,53 @@
   --cardColor: #ffffff;
   --borderColor: #e6ecf8;
   --shadowColor: #e9f0f380;
+  --purple : #750ff7;
 
   --styledBorder: var(--borderTemplate) var(--borderColor);
   --styledShadow: 0 5px 5px 0 var(var(--shadowColor));
 
   --textAlign: center;
 }
+
+@media screen and (max-width:700px) {
+  .desktop {
+    display: none;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  nav {
+  display: flex;
+  justify-content: space-between;
+  }
+
+  header>nav>ul>li>a{
+    color: var(--purple);
+  }
+
+  .firstbanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;  
+  }
+
+  .skills{
+    display : flex;
+    flex-direction: row-reverse;
+    justify-content: center;  
+  }
+}
+
+  .skills--title{
+    display: none;
+  }
+
 
 img {
   max-width: 100%;
