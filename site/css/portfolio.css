@@ -96,6 +96,10 @@ p {
   background-color: var(--lightWildColor);
 }
 
+.disabled {
+  opacity: 50%;
+}
+
 .skills {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
@@ -152,6 +156,25 @@ p {
 .column ul {
   list-style: none;
   padding: 0;
+}
+
+@media screen and (min-width: 700px) {
+  article.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  article.projects > h2, article.projects > p {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  article.projects > section > * {
+    flex: 1 1 calc(33.333% - 10px);
+    margin: 5px;
+  }
 }
 
 .pink-text {
