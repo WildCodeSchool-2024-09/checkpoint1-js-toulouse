@@ -48,7 +48,7 @@ p {
   text-align: var(--textAlign);
 }
 
-.modify-button {
+.modify-page-button {
   background-color: #ffc1f0;
   border: 1px solid white;
   padding: 10px;
@@ -93,6 +93,12 @@ p {
   border-top-left-radius: 0;
 }
 
+.modify-list-button {
+  border: none;
+  padding: 7px;
+  border-radius: 3px;
+}
+
 .column:last-child {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -126,6 +132,15 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+.add-box {
+  display: flex;
+  gap: 5px;
+}
+
+.modify-add-button {
+  padding-block: 5px;
 }
 
 @media screen and (min-width: 700px) {
